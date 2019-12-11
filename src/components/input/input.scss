@@ -1,0 +1,32 @@
+.todo__form {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  form {
+    width: 100%;
+
+    .form__group {
+      height: 100%;
+      width: 100%;
+
+      .form__control {
+        height: 100%;
+        width: 100%;
+        padding: 16px;
+        border: 1px solid #bbbbbb;
+        border-right: none;
+        background: #fff;
+        border-radius: 3px 0 0 3px;
+      }
+    }
+  }
+  .btn {
+    border: 1px solid #bbbbbb;
+    border-radius: 0 3px 3px 3px 0;
+    width: 20%;
+    height: 3rem;
+  }
+}

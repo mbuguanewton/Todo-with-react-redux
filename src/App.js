@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import AddTodoInput from "./components/input/AddTodoInput";
+import TodosWrapper from "./components/todos/todosWrapper";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>TODO APP WITH REDUX</p>
       </header>
+
+      <div className="todos__container">
+        <AddTodoInput></AddTodoInput>
+        <br />
+        <TodosWrapper></TodosWrapper>
+      </div>
     </div>
   );
 }
